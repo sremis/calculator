@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <form action="/" method="post">
+  First Number: <input type="number" name="firstNumber" >
+ <select name="operator">
+	  <option value="+">+</option>
+	  <option value="-">-</option>
+	  <option value="*">*</option>
+	  <option value="/">/</option>
+	  <option value="^">^</option>
+	  <option value="nRoot">nth Root</option>
+	  <option value="log">log</option>
+</select>   
+  Second Number: <input type="number" name="secondNumber" ><br>
+  <input type="submit" value="Submit">
+</form>
+ <form action="/" method="post">
+
+  Number: <input type="number" name="number" >
+ <select name="operator">
+	  <option value="sin">sin</option>
+	  <option value="cos">cos</option>
+	  <option value="tan">tan</option>
+	  <option value="sinh">sinh</option>
+	  <option value="cosh">cosh</option>
+	  <option value="tanh">tanh</option>
+	  <option value="logN">logN</option>
+	  <option value="e^n">e^n</option>
+</select>
+ <input type="submit" value="Submit">
+</form>
+
+{{#result}}
+{{.}}<br/>
+{{/result}}
+<br />
+</body>
+</html>
